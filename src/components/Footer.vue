@@ -50,20 +50,4 @@ export default {
     padding: 0.75rem;
   }
 }
-@media only screen and (max-width: 768px) {
-  .footer-container {
-    display: grid;
-  }
-  span {
-    padding: 0;
-  }
-  .instagram {
-    margin-right: 1rem;
-  }
-}
-.social-icon {
-  svg {
-    width: 1rem;
-  }
-}
 </style>
