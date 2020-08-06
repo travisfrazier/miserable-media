@@ -61,7 +61,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .project-header {
   padding: 20vh 0 4rem 0;
 }
@@ -91,5 +91,6 @@ export default {
   position: relative;  
   padding-bottom: 56.25%;
   height: 0;
+  box-shadow: 0px 0px 9px 1px rgba(71,71,71,1);
 }
 </style>

@@ -87,5 +87,6 @@ export default {
   position: relative;  
   padding-bottom: 56.25%;
   height: 0;
+  box-shadow: 0px 0px 9px 1px rgba(71,71,71,1);
 }
 </style>
