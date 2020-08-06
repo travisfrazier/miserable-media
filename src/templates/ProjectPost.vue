@@ -87,4 +87,9 @@ export default {
 .category:last-of-type:after {
   content: '';
 }
+.videoWrapper {
+  position: relative;  
+  padding-bottom: 56.25%;
+  height: 0;
+}
 </style>
