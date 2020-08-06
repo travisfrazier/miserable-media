@@ -1,5 +1,5 @@
 ---
-date: 2019-06-04
+date: 2020-08-05
 title: Journal Coming Soon...
 author: Jeremy Caruthers
 excerpt: coming soon...
