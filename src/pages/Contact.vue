@@ -1,14 +1,27 @@
 <template>
   <Layout>
     <div class="container">
-
       <div class="contact-header">
         <h1 class="contact-title">Say hi!</h1>
-        <p>Leave me a note with any questions you might have, I'll get back to you as soon as possible.</p>
+        <p>
+          Leave us a note with any questions you might have, We will get back to
+          you as soon as possible.
+        </p>
       </div>
 
-      <form class="contact-form" name="contact">
-
+      <form
+        class="contact-form"
+        name="contact"
+        method="post"
+        v-on:submit.prevent="handleSubmit"
+        action="/success/"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <p hidden>
+          <label> Don’t fill this out: <input name="bot-field" /> </label>
+        </p>
         <div class="sender-info">
           <div>
             <label for="name" class="label">Your name</label>
@@ -25,16 +38,42 @@
           <textarea name="message"></textarea>
         </div>
 
-        <button class="button">Submit form</button>
-
+        <button type="submit" class="button">Submit form</button>
       </form>
-
     </div>
   </Layout>
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'Contact',
+  data() {
+    return {
+      formData: {},
+    };
+  },
+  methods: {
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+        )
+        .join('&');
+    },
+    handleSubmit(e) {
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: this.encode({
+          'form-name': e.target.getAttribute('name'),
+          ...this.formData,
+        }),
+      })
+        .then(() => alert('Success! That worked :)'))
+        .catch((error) => alert(error));
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -58,10 +97,12 @@ export default {}
 .sender-info > div:last-of-type {
   margin: 0;
 }
-input:focus,textarea:focus {
+input:focus,
+textarea:focus {
   border-color: var(--color-contrast-1);
 }
-input,textarea {
+input,
+textarea {
   background: transparent;
   border: 1px solid var(--color-base-1);
   outline: none;
@@ -96,4 +137,3 @@ textarea {
   border: 1px solid var(--color-base-1);
 }
 </style>
-
