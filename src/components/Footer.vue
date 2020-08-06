@@ -47,7 +47,7 @@ export default {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   a {
-    padding: 0.75rem;
+    padding: 0.74rem;
   }
 }
 </style>
