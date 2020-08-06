@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <!-- <div>
         <div class="latest-journals-heading container">
         <span class="label">Latest and greatest</span>
         </div>
@@ -10,7 +10,7 @@
             </g-link>
         </div>
         </div>
-    </div>
+    </div> -->
 </template>
 
 <script>
