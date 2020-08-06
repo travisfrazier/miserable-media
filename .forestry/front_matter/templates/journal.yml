@@ -29,9 +29,9 @@ fields:
     source:
       type: simple
       section: authors
-      file: data/authors/nichlas-w-andersen.json
+      file: data/authors/jeremycaruthers.json
     required: true
     options:
-    - Nichlas W. Andersen
+    - Jeremy Caruthers
   label: Author
-  default: Nichlas W. Andersen
+  default: Jeremy Caruthers
