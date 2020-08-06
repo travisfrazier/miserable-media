@@ -15,9 +15,10 @@
           />
         </g-link>
       </div>
-      <nav class="nav right">
+      <span class="open-nav" @click="openMobileNav">Menu</span>
+      <nav class="nav right" v-bind:class="{ isOpen: openNav }">
+        <span class="close-nav" @click="openMobileNav">X</span>
         <g-link class="nav__link" to="/about">About Us</g-link>
-
         <g-link class="nav__link" to="/blog">Blog</g-link>
         <g-link class="nav__link" to="/contact">Say Hi!</g-link>
       </nav>
@@ -31,12 +32,19 @@ export default {
     return {
       logo: require('../../static/logo.svg'),
       settings: require('../../data/theme.json'),
+      openNav: false
     };
   },
+  methods: {
+      openMobileNav() {
+          console.log('hey')
+          this.openNav = !this.openNav;
+      }
+  }
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .header {
   position: relative;
   height: 6rem;
@@ -86,5 +94,36 @@ export default {
 }
 .nav > .active {
   border-color: inherit;
+}
+.right {
+  @media only screen and (max-width: 550px) {
+    display: none;
+    position: absolute;
+    background: black;
+    width: 100%;
+    top: 0;
+    right: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    .nav__link {
+      color: white;
+    }
+  }
+}
+.close-nav {
+  color: white;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.open-nav {
+    font-weight: bold;
+    cursor: pointer;
+}
+.isOpen {
+    display: block !important;
 }
 </style>
