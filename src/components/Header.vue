@@ -18,8 +18,8 @@
       <span class="open-nav" @click="openMobileNav">Menu</span>
       <nav class="nav right" v-bind:class="{ isOpen: openNav }">
         <span class="close-nav" @click="openMobileNav">X</span>
-        <g-link class="nav__link" to="/about">About Us</g-link>
-        <g-link class="nav__link" to="/blog">Blog</g-link>
+        <!-- <g-link class="nav__link" to="/about">About Us</g-link>
+        <g-link class="nav__link" to="/blog">Blog</g-link> -->
         <g-link class="nav__link" to="/contact">Say Hi!</g-link>
       </nav>
     </div>
@@ -122,6 +122,10 @@ export default {
 .open-nav {
     font-weight: bold;
     cursor: pointer;
+    display: none;
+    @media only screen and (max-width: 550px) {
+        display: block;
+    }
 }
 .isOpen {
     display: block !important;
