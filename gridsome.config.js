@@ -2,11 +2,11 @@
 // Learn more: https://gridsome.org/docs/config
 
 module.exports = {
-  siteName: "Portfolio",
+  siteName: "Miserable Media",
   siteUrl: `https://www.itsnwa.com`,
   host: "0.0.0.0",
   titleTemplate: "%s - NWA",
-  siteDescription: "Creative technologist",
+  siteDescription: "Creative company",
   plugins: [
     {
       use: "@gridsome/source-filesystem",
@@ -24,7 +24,7 @@ module.exports = {
       use: "@gridsome/source-filesystem",
       options: {
         path: "blog/**/*.md",
-        typeName: "JournalPost",
+        typeName: "BlogPost",
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",

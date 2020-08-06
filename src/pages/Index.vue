@@ -4,7 +4,7 @@
       <Hero />
       <ProjectsGrid :projects="$page.projects.edges" />
     </div>
-    <LatestBlogs :blogs="$page.blogs.edges" />
+    <!-- <LatestBlogs :blogs="$page.blogs.edges" /> -->
   </Layout>
 </template>
 
@@ -22,7 +22,7 @@ query Posts {
       }
     }
   },
-  blogs: allJournalPost (perPage: 4) {
+  blogs: allBlogPost (perPage: 4) {
     edges {
       node {
         id
