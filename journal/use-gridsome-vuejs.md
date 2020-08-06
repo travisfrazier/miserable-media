@@ -1,7 +1,7 @@
 ---
 date: 2019-06-04
 title: Journal Coming Soon...
-author: Nichlas W. Andersen
+author: Jeremy Caruthers
 excerpt: coming soon...
 
 ---
