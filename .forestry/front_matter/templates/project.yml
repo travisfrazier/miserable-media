@@ -36,6 +36,6 @@ fields:
     color_format: Hex
   label: Foreground color
 pages:
-- projects/reel.md
 - projects/andymineo.md
+- projects/reel.md
 - projects/wordsplayed.md
