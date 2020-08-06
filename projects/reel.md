@@ -1,12 +1,12 @@
 ---
-date: 2019-05-16
-year: 2019
-title: Banana
+date: 2020-08-01
+year: 2020
+title: MISERABLE.media Reel
 category: Identity
-thumbnail: "/uploads/mike-dorner-173502-unsplash.jpg"
+thumbnail: "https://www.youtube.com/embed/JtVFzAlqsIw"
 categories:
-- photography
-- pink
+- videography
+- production
 project_bg_color: ''
 project_fg_color: ''
 

@@ -1,10 +1,10 @@
 ---
-thumbnail: "/uploads/ian-dooley-281897-unsplash.jpg"
-title: Ice Cream
+thumbnail: "https://www.youtube.com/embed/sXqzMdizcb8"
+title: Wordsplayed Circle of Trust
 date: 2019-01-04
 categories:
-- photography
-- yellow
+- videography
+- production
 project_bg_color: ''
 project_fg_color: "#FDC70D"
 
