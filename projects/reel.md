@@ -5,8 +5,7 @@ title: MISERABLE.media Reel
 category: Identity
 thumbnail: https://www.youtube.com/embed/JtVFzAlqsIw
 categories:
-- videography
-- production
+- 2020 Demo Reel
 project_bg_color: ''
 project_fg_color: ''
 
