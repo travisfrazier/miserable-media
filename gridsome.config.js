@@ -3,9 +3,9 @@
 
 module.exports = {
   siteName: "Miserable Media",
-  siteUrl: `https://www.itsnwa.com`,
+  siteUrl: `https://www.miserable.media`,
   host: "0.0.0.0",
-  titleTemplate: "%s - NWA",
+  titleTemplate: "%s - Production Company",
   siteDescription: "Creative company",
   plugins: [
     {
