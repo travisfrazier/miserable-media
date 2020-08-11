@@ -1,6 +1,6 @@
 ---
 date: 2020-08-11
-thumbnail: "/uploads/markus-spiske-516263-unsplash.jpg"
+thumbnail: ''
 title: 9 Years of Far-Flung Tin Can
 categories: []
 project_bg_color: "#FFFFFF"
