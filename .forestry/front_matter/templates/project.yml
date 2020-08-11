@@ -36,6 +36,7 @@ fields:
     color_format: Hex
   label: Foreground color
 pages:
+- projects/9-years-of-far-flung-tin-can.md
 - projects/andymineo.md
 - projects/reel.md
 - projects/wordsplayed.md
