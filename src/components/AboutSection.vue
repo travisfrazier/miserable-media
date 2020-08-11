@@ -25,4 +25,16 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.about-container {
+  padding: 0 1rem;
+  p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.68;
+    padding: 0;
+    margin: 0;
+    opacity: 0.6;
+  }
+}
+</style>
