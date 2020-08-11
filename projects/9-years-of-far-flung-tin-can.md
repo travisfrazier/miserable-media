@@ -1,8 +1,9 @@
 ---
-date: 2020-08-11
-thumbnail: ''
+date: 2020-01-11
+thumbnail: https://www.youtube.com/embed/-Sw9pJRKyDU
 title: 9 Years of Far-Flung Tin Can
-categories: []
+categories:
+- Documentary Film
 project_bg_color: "#FFFFFF"
 project_fg_color: "#417505"
 

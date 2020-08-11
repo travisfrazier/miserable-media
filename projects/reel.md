@@ -1,6 +1,5 @@
 ---
-date: 2020-08-01
-year: 2020
+date: 2020-08-11
 title: MISERABLE.media Reel
 category: Identity
 thumbnail: https://www.youtube.com/embed/JtVFzAlqsIw
