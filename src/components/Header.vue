@@ -9,7 +9,7 @@
       <div class="left">
         <g-link :to="{ name: 'home' }" class="home-link">
           <img
-            src="../../static/miserable-logo.png"
+            src="../../static/miserable.png"
             :alt="settings.site_name"
             class="logo"
           />
